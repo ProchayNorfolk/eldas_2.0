@@ -32,9 +32,13 @@ const pages = import.meta.glob(
   }
 )
 
-/* ================== ROUTING ================== */
+//* ================== ROUTING ================== */
 const rawPath = window.location.pathname
-const path = rawPath.replace(/\/$/, '')
+
+// прибираємо базовий шлях GitHub Pages
+const path = rawPath
+  .replace('/eldas_2.0', '')
+  .replace(/\/$/, '')
 
 let pageName
 
@@ -48,7 +52,6 @@ if (
   pageName = path.replace('/', '')
 }
 
-// шукаємо сторінку
 const pageEntry = Object.entries(pages).find(([key]) =>
   key.endsWith(`${pageName}.hbs`)
 )
