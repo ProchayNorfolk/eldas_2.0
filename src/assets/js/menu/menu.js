@@ -44,5 +44,5 @@ document.addEventListener('click', e => {
 
   history.pushState({}, '', url)
 
-  window.location.reload()
+  window.dispatchEvent(new Event('spa:navigate'))
 })
