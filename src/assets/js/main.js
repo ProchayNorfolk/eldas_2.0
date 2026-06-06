@@ -35,13 +35,18 @@ const pages = import.meta.glob(
 /* ================== ROUTING ================== */
 const rawPath = window.location.pathname
 const path = rawPath.replace(/\/$/, '')
-let pageName = path.replace('/', '') || 'index'
 
-// if (path === '/about') pageName = 'about'
-// if (path === '/portfolio') pageName = 'portfolio'
-// if (path === '/pages') pageName = 'pages'
-// if (path === '/blog') pageName = 'blog'
-// if (path === '/contact') pageName = 'contact'
+let pageName
+
+if (
+  path === '' ||
+  path === '/' ||
+  path === '/index.html'
+) {
+  pageName = 'index'
+} else {
+  pageName = path.replace('/', '')
+}
 
 // шукаємо сторінку
 const pageEntry = Object.entries(pages).find(([key]) =>
@@ -49,7 +54,6 @@ const pageEntry = Object.entries(pages).find(([key]) =>
 )
 
 const page = pageEntry ? pageEntry[1] : null
-
 /* ================== RENDER ================== */
 if (!page) {
   console.error('❌ Page not found:', pageName)
