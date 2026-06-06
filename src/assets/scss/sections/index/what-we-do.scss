@@ -1,0 +1,137 @@
+/* ================== title-block ================== можливо винести в окремий блок*/
+.sub-title {
+  font-size: 14px;
+  color: #899ea7;
+  text-transform: uppercase;
+  letter-spacing: 3.4px;
+  margin-bottom: 10px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-weight: bold;
+}
+/* ================== end title-block ================== */
+
+.what-we-do {
+    padding-top:125px; /* ==== відступи ==== */
+}
+
+.what-we-do-wrap {
+  text-align: center;
+  margin-bottom: 110px;
+}
+
+.what-we-do-pic {
+  background: no-repeat center center;
+  min-height: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.what-we-do-pic.bg-1 {
+  background-image: url("/images/main-page/what-we-do/what-we-do-pic-bg.png");
+}
+
+.what-we-do-pic.bg-2 {
+  background-image: url("/images/main-page/what-we-do/what-we-do-pic-bg-2.png");
+}
+
+.what-we-do-pic.bg-3 {
+  background-image: url("/images/main-page/what-we-do/what-we-do-pic-bg-3.png");
+}
+
+.what-we-do-pic.bg-4 {
+  background-image: url("/images/main-page/what-we-do/what-we-do-pic-bg-4.png");
+}
+
+.what-we-do-number {
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  background: linear-gradient(135deg, #a92ef0 0%, #1991ed 67%, #198eed 100%);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(calc(-50% - 52px));
+  transform: translateX(calc(-50% - 52px));
+}
+
+.what-we-do-number span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.what-we-do-pic i {
+  color: #8e34ef;
+  font-size: 70px;
+}
+
+.what-we-do-description {
+  line-height: 26px;
+}
+
+.what-we-do-wrap.what-we-do-form-wrap {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+/* форма */
+.what-we-do-form-wrap {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.what-we-do-form {
+  border-radius: 12px;
+  padding: 40px;
+  background: 
+    url("/images/main-page/what-we-do/form-left-bg.png") no-repeat -275px -145px,
+    url("/images/main-page/what-we-do/form-right-bg.png") no-repeat 365px -228px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+
+  .form-title {
+    margin-bottom: 10px;
+  }
+
+  .form-description {
+    margin-bottom: 20px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.subscribe-form {
+  position: relative;
+
+  input[type="email"] {
+    border: 1px solid #758c92;
+    border-radius: 50px;
+    padding: 18px 180px 18px 25px;
+    width: 100%;
+    outline: none;
+    transition: 0.3s;
+
+    &:focus {
+      border-color: #9045f8;
+      box-shadow: 0 0 0 3px rgba(144, 69, 248, 0.15);
+    }
+  }
+}

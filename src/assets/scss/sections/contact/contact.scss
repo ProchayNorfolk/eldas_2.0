@@ -1,0 +1,72 @@
+.contact {
+  padding: 90px 0;
+}
+
+.contact-container {
+  margin-top: 30px;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 26px;
+}
+
+.contact-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-group label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2f3550;
+  margin-bottom: 18px;
+}
+
+.contact-group label span {
+  color: #f97a2e;
+  margin-left: 2px;
+}
+
+.contact-group input,
+.contact-group textarea {
+  border: none;
+  border-bottom: 2px solid #d8d8d8;
+  background: transparent;
+  padding: 0 10px 14px;
+  font-size: 17px;
+  font-style: italic;
+  color: #2f2f2f;
+  outline: none;
+}
+
+.contact-group input:focus,
+.contact-group textarea:focus {
+  border-color: #f97a2e;
+  transition: all 0.3s;
+}
+
+.contact-group textarea {
+  resize: none;
+  min-height: 70px;
+}
+
+.contact-group--full {
+  grid-column: 1 / -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

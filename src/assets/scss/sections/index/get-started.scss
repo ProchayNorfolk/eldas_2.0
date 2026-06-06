@@ -1,0 +1,23 @@
+.get-started {
+  background: linear-gradient(135deg, #b73afa 20%, #2362f4 100%);
+  padding: 75px 0 100px;/* ==== відступи ==== */
+   .row {
+    justify-content: center;
+   }
+}
+
+.get-started, 
+.get-started .title-block .sub-title, 
+.get-started .title-block .title {
+  color: #fff;
+}
+
+.get-started .title-block .title {
+    font-size:50px;
+    margin-bottom:20px;
+    letter-spacing:-2px
+}
+
+.get-started-description {
+  margin-bottom: 55px;
+}

@@ -1,0 +1,82 @@
+.our-portfolio {
+  padding: 75px 0; /* ==== відступи ==== */
+}
+
+// .gallery-wrap {
+  // width: 100%;
+  // overflow-x: hidden;
+// }
+
+.gallery-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery-item {
+  aspect-ratio: 4 / 3;
+  position: relative;
+  overflow: hidden;
+
+  a {
+    display: block;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.gallery-item-info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(200, 200, 255, 0.6);
+  backdrop-filter: blur(6px);
+  transform: translateY(100%);
+  transition: 0.4s ease;
+  // box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+}
+
+.gallery-item:hover .gallery-item-info {
+  transform: translateY(0);
+}
+
+.item-info-left {
+  text-transform: capitalize;
+
+  .awesome {
+    font-size: 17px;
+    font-weight: bold;
+    color: #010927;
+  }
+
+  .illustration {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    color: #3a4366;
+  }
+}
+
+.item-info-right {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #8e34ef;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    font-size: 14px;
+  }
+}

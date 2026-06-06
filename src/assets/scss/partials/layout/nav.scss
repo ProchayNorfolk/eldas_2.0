@@ -1,0 +1,166 @@
+.main-nav {
+  transition: all 0.3s;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.list-menu {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-link {
+  display: block;
+  position: relative;
+  color: #fff;
+  transition: all .3s;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &hover {
+    color: #f97a2e;
+    text-decoration: none;
+  }
+}
+
+.nav-link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  width: 0;
+  height: 3px;
+  z-index: 1;
+
+  background-color: #f97a2e;
+  transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1);
+}
+
+.nav-link:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  width: 0;
+  height: 3px;
+  z-index: 1;
+  background-color: #fff;
+  transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  color: #f97a2e;
+}
+
+.nav-link:hover:after,
+.nav-link:hover:before {
+  width: 100%;
+  left: 0;
+}
+
+/* ================== Sticky header ================== */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 30px 0; /* стартова висота */
+  background: transparent;
+  transition: all 0.35s ease;
+
+  &.scrolled {
+    padding: 10px 0; /* дає ~80px сумарно */
+    background: rgba(20, 20, 30, 0.75);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
+}
+/* ================== end Sticky header ================== */
+
+
+body {
+  /*padding-top: 160px;  щоб контент не залазив під header */
+  position: relative; /* щоб bg home тянувся */
+}
+
+/* ================= NAV ================= */
+
+
+/* ================= ВНУТРІШНІЙ БЛОК ================= */
+.wrap-main-nav {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  transition: all 0.35s ease;
+}
+
+
+/* при скролі */
+.header.scrolled .wrap-main-nav {
+  min-height: 60px; /* можна 55–65 підкрутити */
+  transform: translateY(-2px);
+  height: 80px;
+}
+
+.main-nav {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.list-menu {
+  display: flex;
+  gap: 35px;
+}
+
+/* ================= LINK ================= */
+
+.nav-link {
+  position: relative;
+  display: block;
+  padding: 6px 0;
+
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+
+  /* underline ефект */
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+  }
+
+  &::before {
+    background: #fff;
+    transition: 0.25s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s;
+  }
+
+  &::after {
+    background: #f97a2e;
+    transition: 0.25s cubic-bezier(0.694, 0.048, 0.335, 1);
+  }
+
+  &:hover {
+    color: #f97a2e;
+
+    &::before,
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+
+
+/* ================== mobile menu ================== */
+

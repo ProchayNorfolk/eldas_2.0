@@ -1,0 +1,205 @@
+// ============================testimonial-cards============================
+.testimonials {
+  padding: 75px 0 25px;
+  /* ==== відступи ==== */
+}
+
+.testimonials .title-block {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.testimonials .title-block:before {
+  content: '';
+  background: url("/images/main-page/testimonials/title-quotes.png") no-repeat;
+  width: 145px;
+  height: 104px;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.wrap-testimonials {
+  border-radius: 3px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  padding: 18px 20px;
+  margin: 15px 0;
+}
+
+.testimonials-head {
+  width: 24px;
+  height: 17px;
+  background: url("/images/main-page/testimonials/quotes-small.png") no-repeat center center;
+  margin-bottom: 15px;
+}
+
+.testimonials-text {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+.testimonials-author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonials-photo {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin-right: 25px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  align-self: flex-start;
+}
+
+.testimonials-wrap-name {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 42px;
+  font-weight: 300;
+}
+
+.testimonials-name {
+  margin-top: 2px;
+}
+
+.testimonial-social {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.social-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 31px;
+  border-radius: 50%;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.social-item i {
+  transition: color .2s ease;
+  font-size: 18px;
+}
+
+.social-item:hover a {
+  background: rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+.social-item:hover i {
+  color: #000;
+}
+
+.facebook {
+  color: #2a40e5;
+}
+
+.basketball {
+  color: #ea4c89;
+}
+
+.twitter {
+  color: #03a9f4;
+}
+
+// ============================why-choose-us-cards============================
+.why-choose-us {
+  margin: 160px 0;
+}
+
+.wrap-why-choose-us {
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.wrap-why-choose-us.bg-1 {
+  background: url("/images/main-page/what-we-do/form-left-bg.png") no-repeat -275px -145px;
+}
+
+.wrap-why-choose-us.bg-2 {
+  background: url("/images/main-page/what-we-do/form-right-bg.png") no-repeat 143px -123px;
+}
+
+.wrap-why-choose-us.bg-3 {
+  background: url("/images/main-page/what-we-do/form-left-bg.png") no-repeat -250px -200px;
+}
+
+.why-choose-us-pic {
+  display: flex;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 25px;
+}
+
+.why-choose-us-description {
+  line-height: 26px;
+}
+
+// ============================end why-choose-us-cards========================
+
+// ============================ our-team-cards-cards========================
+
+.out-team {
+  a {
+    color: #2f2f2f;
+  }
+
+  .wrap-out-team {
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    transition: 0.3s;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    height: 100%;
+  }
+
+  .wrap-out-team:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+  }
+
+  .testimonials-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 0 12px;
+  }
+
+  .out-team-photo {
+    margin-bottom: 20px;
+  }
+
+  .out-team-photo img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+  }
+
+  .testimonial-social {
+    margin-bottom: 10px;
+    gap: 14px;
+  }
+
+  .out-team-description {
+    color: #6b7280;
+    font-size: 16px;
+  }
+
+  .row {
+    align-items: stretch;
+    row-gap: 40px;
+  }
+}
+
+
+// ============================end our-team-cards-cards=====================

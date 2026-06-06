@@ -1,0 +1,11 @@
+@media screen and (min-width: 1920px) {
+    .home:before {
+        background:url("/images/main-page/home/bg2500.png") no-repeat center top,url("/images/main-page/home/home-bg-left.png") no-repeat 0 900px
+    }
+}
+
+@media (max-width: 768px) {
+  .reverse-row {
+    flex-direction: column;
+  }
+}

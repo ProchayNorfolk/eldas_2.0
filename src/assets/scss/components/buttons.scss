@@ -1,0 +1,104 @@
+/* ================== бічна кнопка в header ================== */
+.menu-button-toggle {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.menu-button-toggle {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.menu-button-toggle:hover {
+  color: #f97a2e; 
+}
+/* =====================end бічна кнопка в header==================== */
+
+/* ================== кнопка section home ================== */
+.custom-btn {
+    font-family:'Montserrat', sans-serif;
+    text-transform:uppercase;
+    font-size: 13px;
+    font-weight:600;
+    color:#fff;
+    background:#9045f8;
+    border:none;
+    border-radius:50px;
+    box-shadow:10px 7px 25px 1px rgba(185,185,185,0.5);
+    padding:15px 40px;
+    cursor:pointer;
+    transition:all .3s;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.custom-btn:hover {
+    box-shadow:4px 4px 9px 0 #b9b9b9;
+}
+
+.reverse-btn {
+    background:transparent;
+    border:2px solid #fff;
+    box-shadow:none;
+}
+
+.reverse-btn:hover {
+    box-shadow:4px 4px 9px 0 rgba(0,0,0,0.3);
+    color:#010927;
+    background:#fff;
+}
+/* ===================end кнопка section home====================== */
+
+/* ===================кнопка форма====================== */
+.subscribe-form {
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #6f42c1, #9045f8);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 16px 35px;
+    box-shadow: 10px 7px 25px rgba(185, 185, 185, 0.5);
+    transition: 0.3s;
+
+    &:hover {
+      cursor:pointer;
+      box-shadow:4px 4px 9px 0 #b9b9b9;
+    }
+  }
+}
+/* ===================end кнопка форма====================== */
+
+/* ===================get-started====================== */
+.custom-btn.reverse {
+    background:transparent;
+    border:2px solid #fff;
+    box-shadow:none;
+}
+
+.custom-btn.reverse:hover {
+    box-shadow:4px 4px 9px 0 rgba(0,0,0,0.3);
+    color:#010927;
+    background:#fff;
+}
+
+/* ===================end get-started====================== */
+/* ===================contact====================== */
+.contact-btn {
+  grid-column: 1 / -1;
+  justify-self: end;
+}
+/* ===================end contact====================== */

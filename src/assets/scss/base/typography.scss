@@ -1,0 +1,144 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'Segoe UI Bold';
+  src: url('/src/assets/fonts/Segoe-UI-Bold.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ================== TYPOGRAPHY ================== */
+
+/* BASE */
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #2f2f2f;
+}
+
+/* HEADINGS RESET */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #010927;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* ================== TITLES ================== */
+
+h1 {
+  font-size: 76px;
+  line-height: 93px
+}
+
+h2 {
+  font-size: 60px;
+  line-height: 58px
+}
+
+h3 {
+  font-size: 48px;
+  line-height: 68px
+}
+
+h4 {
+  font-size: 22px;
+  line-height: 42px
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 42px
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 42px
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #010927;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 0
+}
+
+/* ================== TEXT ================== */
+
+
+p {
+  line-height: 26px;
+  margin: 0 0 10px 0
+}
+
+/* LARGE TEXT */
+.text-lg {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* SMALL TEXT */
+.text-sm {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* ================== LINKS ================== */
+
+a {
+  text-decoration: none;
+  color: #3273DC;
+  transition: color 200ms;
+
+  &:hover {
+    //   opacity: 0.7;
+    color: #194690;
+  }
+}
+
+/* ================== LISTS ================== */
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ================== STRONG ================== */
+
+strong {
+  font-weight: 700;
+}
+
+/* ================== UTILITIES ================== */
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
