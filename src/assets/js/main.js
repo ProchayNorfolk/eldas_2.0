@@ -2,6 +2,7 @@ import '../scss/style.scss'
 
 /* ================== Handlebars ================== */
 import Handlebars from 'handlebars'
+
 /* ================== PARTIALS ================== */
 const partials = import.meta.glob(
   '/src/templates/partials/**/*.hbs',
@@ -32,10 +33,9 @@ const pages = import.meta.glob(
   }
 )
 
-//* ================== ROUTING ================== */
+/* ================== ROUTING ================== */
 const rawPath = window.location.pathname
 
-// прибираємо базовий шлях GitHub Pages
 const path = rawPath
   .replace('/eldas_2.0', '')
   .replace(/\/$/, '')
@@ -52,11 +52,19 @@ if (
   pageName = path.replace('/', '')
 }
 
+console.log({
+  rawPath,
+  path,
+  pageName
+})
+
+// шукаємо сторінку
 const pageEntry = Object.entries(pages).find(([key]) =>
   key.endsWith(`${pageName}.hbs`)
 )
 
 const page = pageEntry ? pageEntry[1] : null
+
 /* ================== RENDER ================== */
 if (!page) {
   console.error('❌ Page not found:', pageName)
@@ -70,30 +78,18 @@ if (!page) {
 
   document.querySelector('#app').innerHTML = finalHTML
 }
+
 /* ================== end Handlebars ================== */
 
 /* ================== підключення menu.js slider.js tabs.js ================== */
-import { initMenu } from './menu/menu.js';
-// import { initSlider } from './slider/slider.js';
-// import { initTabs } from './tabs/tabs.js';
-
+import { initMenu } from './menu/menu.js'
+// import { initSlider } from './slider/slider.js'
+// import { initTabs } from './tabs/tabs.js'
 
 document.addEventListener('DOMContentLoaded', () => {
-  initMenu();
-  // initSlider();
-  // initTabs();
-  
-});
+  initMenu()
+  // initSlider()
+  // initTabs()
+})
+
 /* ================== end підключення ================== */
-
-
-
-
-
-
-
-
-
-
-
-
